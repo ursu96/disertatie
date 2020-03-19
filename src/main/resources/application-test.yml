@@ -1,0 +1,4 @@
+#https://blog.mestwin.net/send-push-notifications-from-spring-boot-server-side-application-using-fcm/
+spring.profiles.active: test-special
+
+message: "Hello"
