@@ -27,7 +27,7 @@ public class PushController {
     @GetMapping(value = "/")
     String getHelloWorld (){
         logger.info("Called /");
-        return message + " " + varEnv + " worldd!";
+        return message + " " + varEnv + " world!";
     }
 
     @GetMapping(value = "/summary")
