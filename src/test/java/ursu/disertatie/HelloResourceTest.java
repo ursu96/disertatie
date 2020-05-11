@@ -27,7 +27,7 @@ public class HelloResourceTest {
     }
 
     @Test
-    public void testHelloWorld() throws Exception{
+    public void testHelloWorld() throws Exception {
 
         mockMvc.perform(
                 MockMvcRequestBuilders.get("/test")
