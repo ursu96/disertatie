@@ -11,9 +11,9 @@ import ursu.disertatie.Services.SummaryService;
 import java.util.List;
 
 @RestController
-public class PushController {
+public class HelloController {
 
-    Logger logger = LoggerFactory.getLogger(PushController.class);
+    Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     @Value("${spring.profiles.active}")
     private String varEnv;
@@ -25,9 +25,15 @@ public class PushController {
     SummaryService summary;
 
     @GetMapping(value = "/")
-    String getHelloWorld (){
+    String getHelloWorldSpecial (){
         logger.info("Called /");
         return message + " " + varEnv + " world!";
+    }
+
+    @GetMapping(value = "/test")
+    String getHelloWorld (){
+
+        return "Hello world!";
     }
 
     @GetMapping(value = "/summary")
