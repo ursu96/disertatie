@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "20f5c604-92d0-4ec4-9b16-5f38770909e2",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "helloWorld",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "720c750a-9967-4731-817f-13e462c0a505",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Body matches string\"] = responseBody.has(\"Hello world\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost/test"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
