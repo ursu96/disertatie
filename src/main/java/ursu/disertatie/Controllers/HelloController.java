@@ -27,7 +27,7 @@ public class HelloController {
     @GetMapping(value = "/")
     String getHelloWorldSpecial (){
         logger.info("Called /");
-        return message + " " + varEnv + " Purcel world!";
+        return message + " " + varEnv + " world!";
     }
 
     @GetMapping(value = "/test")
