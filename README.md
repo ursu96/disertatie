@@ -1,2 +1,1 @@
-# CI/CD for java applications
-
+# CI/CD FOR Java Applications
